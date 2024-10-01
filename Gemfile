@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'mongoid', '~> 9.0.1'
+gem "mongoid", "~> 9.0.1"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.1"
