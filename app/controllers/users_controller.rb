@@ -8,13 +8,13 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.create!(user_params)
     if @user.save
       redirect_to users_path, notice: "Usuário criado com sucesso."
-      return
+    else
+      puts @user.errors.full_messages
+      render :new
     end
-
-    render :new
   end
 
   def show

@@ -1,5 +1,13 @@
 <h1>Lista de Usuários</h1>
 
+<%= link_to 'Novo Usuário', new_user_path %>
+
+<% if flash[:notice] %>
+  <div class="notice">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
 <table>
   <thead>
     <tr>
@@ -21,5 +29,3 @@
     <% end %>
   </tbody>
 </table>
-
-<%= link_to 'Novo Usuário', new_user_path %>
