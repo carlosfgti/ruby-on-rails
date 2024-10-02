@@ -5,7 +5,7 @@ class Api::ProductsController < ApplicationController
   # GET /products
   def index
     @products = Product.all
-    render json: @products
+    render json: @products, include: :category
   end
 
   # GET /products/:id
@@ -45,6 +45,6 @@ class Api::ProductsController < ApplicationController
   end
 
   def product_params
-    params.require(:product).permit(:name, :description, :price)
+    params.require(:product).permit(:name, :description, :price, :category_id)
   end
 end
