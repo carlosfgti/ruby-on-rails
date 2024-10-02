@@ -1,24 +1,45 @@
-# README
+# Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este projeto é uma simples aplicação com Ruby on Rails e Mongoid (MongoDB como banco de dados).
 
-Things you may want to cover:
+## Requisitos
 
-* Ruby version
+- Ruby 3.2.2
+- Bundle 2.5.18
+- Gem 3.5.18
+- Rails 7.x
+- Docker >= 27
 
-* System dependencies
+### Instalação
 
-* Configuration
+1. Clone o repositório:
 
-* Database creation
+   ```bash
+   git clone https://github.com/carlosfgti/ruby-on-rails.git
+   cd ruby-on-rails
+   ```
 
-* Database initialization
 
-* How to run the test suite
+2. Suba os containers:
 
-* Services (job queues, cache servers, search engines, etc.)
+    ```bash
+   docker compose up -d
+   ```
 
-* Deployment instructions
 
-* ...
+3. Instale as dependências:
+
+    ```bash
+   bundle install
+   ```
+
+
+4. Inicie o servidor Rails:
+
+    ```bash
+   rails server
+   ```
+
+5. Acesse o projeto:
+
+[http://localhost:3000](http://localhost:3000)
